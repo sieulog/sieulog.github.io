@@ -1,0 +1,20 @@
+Composer is a dependency management tool for PHP projects, you can get it from here, https://getcomposer.org/download/
+I used to make following steps for installation,
+
+```bash
+
+$ curl -sS https://getcomposer.org/installer | php
+$ sudo mv composer.phar /usr/local/bin/composer
+$ composer
+
+```
+I did notice about command-line options to make it more convenient,
+
+```bash
+$ curl -sL https://getcomposer.org/install | php -- --install-dir=/usr/local/bin --filename=composer
+```
+It does the trick for me. If it fails in your case, you probably should pass along with superuser permission as well,
+```bash
+$ curl -sL https://getcomposer.org/install | sudo php -- --install-dir=/usr/local/bin --filename=composer
+```bash
+Yay, that’s it!
